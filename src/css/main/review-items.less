@@ -1,0 +1,79 @@
+
+
+/*<---REVIEW-ITEMS--->*/
+
+#review-items-main {
+	width: 100%;
+
+	.empty-cart-message {
+		color: @red;
+	}
+
+	.review-items-heading {
+		margin: 10px 0 10px 0;
+	}
+
+	.review-items-body {
+		width: 100%;
+		padding: 50px 0 0 5%;
+		.align(justify);
+		
+		.cart-empty,
+		.total {
+			margin: 30px 0 50px 0;
+		}
+
+		.item {
+			margin: 10px 0 10px 0;
+			.align(justify);
+	
+			.item-field {
+				margin: 0 5px 0 0;
+			}
+		}
+
+		.client-form {
+            width: 100%;
+            
+            .hide-error {
+                display: none;
+            }
+            
+            .show-error {
+                display: block;
+                color: @red;
+            }
+            
+            .hidden {
+                display: none;
+            }
+
+			.client-form-heading {
+				.align(justify);
+				margin: 30px 0 30px 0;
+			}
+
+			.form-element {
+				width: 100%;
+				margin: 10px 0 10px 0;
+
+				.label-form {
+					margin: 0 5px 0 0;
+				}
+
+				.input-form {
+					border: 2px solid;
+				}
+			}
+
+			.client-form-button {
+                .standardButton(@black);
+			}
+		}
+	}
+
+	.footer {
+		margin: 250px 0 0 0;
+	}
+
+}

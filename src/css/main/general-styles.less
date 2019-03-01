@@ -1,0 +1,108 @@
+
+
+/*<---GENERAL STYLES--->*/
+
+html,body {
+	height: 100%;
+    line-height: 1.6;
+    .fontSize(0.875em);
+    font-family: ProximaNova,system-ui,-apple-system,BlinkMacSystemFont,
+    Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,
+    Helvetica Neue;
+
+    @media @desktop {
+        .fontSize(1em);
+    }
+}
+
+#container {
+	height: 100%;
+	width: 100%;
+}
+
+////Classes////
+
+button:focus {
+    outline: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.show {
+    display: block;
+}
+
+////Colors////
+
+@lightBlack: #1c1c1c;
+@black: #000;
+@white: #fff;
+@grey:  #495f75;
+@lightBlue: #3498d8;
+@red: #fe2e2e;
+@green: #40bf60;
+
+////Media queries////
+
+@desktop: ~"only screen and (min-width: 960px)";
+
+
+////Mixins////
+
+
+.adminHeading {
+    .fontSize(1.25em);
+        font-weight: bolder;
+}
+
+.align(@side) {
+    text-align: @side;
+}
+
+.background(@color) {
+    background-color: @color;
+}
+
+.decoration(@type) {
+    text-decoration: @type;
+}
+
+.float(@side) {
+    float: @side;
+}
+
+.hidden() {
+    display: none;
+}
+
+.show() {
+    display: block;
+}
+
+.overflow() {
+    overflow: hidden;
+}
+
+.fontSize(@size) {
+    font-size: @size;
+}
+
+.responsiveImage() {
+    max-width: 100%;
+    height: auto;
+}
+
+.standardButton(@color) {
+    .background(@color);
+	color: @white;
+	padding: 5px 10px 5px 10px;
+    border: 0;
+}
+
+.staticDesktopHeader() {
+	background-color: @black;
+	position: static;
+}
+

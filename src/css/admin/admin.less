@@ -1,0 +1,93 @@
+
+
+/*<---ADMIN--->*/
+
+#admin-main {
+	width: 100%;
+	.overflow();
+	
+    .admin-logo {
+        width: 100%;
+        padding: 30px 0 0 5%;
+        .background(@black);
+    }
+
+	.admin-header-nav {
+        width: 100%;
+        .background(@black);
+        padding: 50px 0 0 0;
+
+		.admin-header-links-list {
+			width: 100%;
+			position: relative;
+			.overflow();
+			background-image: linear-gradient(#D35400,#DC7633,#E59866,#EDBB99);
+			
+			.links-list-element {
+				display: block;
+				width: 20%;
+				.float(left);
+				.align(center);
+				padding: 10px 0 10px 0;
+
+				.admin-header-nav-link {
+					.decoration(none);
+					color: @black;
+				}
+			}
+		} 
+    }
+    
+    .admin-heading {
+        margin: 50px 0 10px 5%;
+        .adminHeading();
+    }
+
+	.new-orders-message {
+		position: absolute;
+		z-index: 1;
+		display: inline-block;
+		padding: 15px 30px 15px 30px;
+		left: 40%;
+		top: 0;
+		background-image: linear-gradient(#E74C3C,#EC7063,#F1948A,#F5B7B1); 
+		opacity: 0;
+		@media @desktop {
+			left: 80%;
+		}
+		
+		.close-icon {
+			display: block;
+			.float(right);
+		}
+		.orders-message-text {
+			display: block;
+			padding: 15px 30px 15px 30px;
+		}
+	}
+	.new-orders-fadein {
+		opacity: 1;
+		transition: opacity 2s ease-in-out;
+		-moz-transition: opacity 2s ease-in-out;
+		-webkit-transition: opacity 2s ease-in-out;
+	}
+	
+	.admin-first-header {
+		margin: 25px 0 25px 5%;
+		.align(justify);
+		color: @white;
+	}
+
+	
+	#admin-nested-component {
+		width: 100%;
+		.background(@white);
+
+		@media @desktop {
+			width: 70%;
+			margin: 50px 15% 0 15%;
+		}
+		
+	}
+
+}

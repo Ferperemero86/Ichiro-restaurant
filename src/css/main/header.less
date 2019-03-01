@@ -1,0 +1,228 @@
+
+
+/*<---HEADER--->*/
+
+#header-main {
+	width: 100%;
+	
+	@media @desktop {
+		.background(@black);
+		position: static;
+	}
+
+    .header {
+		width: 100%;
+        .background(@black);
+    	color: @black;
+		.overflow();
+     
+    	@media @desktop {
+            .hidden;
+    	}
+    
+    	.logo {
+    		.responsiveImage();
+            .float(left);
+			
+            @media @desktop {
+                max-width: 50%;
+            }
+		}
+		
+    	.bars {
+    		width: 30%;
+    		.align(left);
+    		.float(left);
+			color: @white;
+	
+    		@media @desktop {
+    			.hidden();
+    		}
+    		
+    		.bars-icon {
+    			.fontSize(30px);
+    			margin: 10px 0 0 15%;
+    		}
+    	}
+    
+    	.social-media {
+    	    width: 30%;
+    		.align(center);
+    		.float(left);
+    		.fontSize(0.625em);
+    
+    		@media @desktop {
+    			width: 35%;
+    			padding: 10px 0 30px 15%;
+    			.align(left);
+    		}
+    
+    		.header-social-icon {
+    			.float(right);
+    			margin: 5px 3% 5px 3%;
+    		}
+		}
+		
+		.basket {
+			.float(left);
+			width: 30%;
+			.align(right);
+            padding: 15px 0 0 0;
+
+			.basket-link {
+				.fontSize(25px);
+				color: @white;
+			}
+
+			.cart-items-number {
+				.align(center);
+
+				.number {
+					.fontSize(0.5em);
+					display: inline-block;
+				    width: 20px;
+					height: 20px;
+					color: @white;
+					border-radius: 10px;
+					position: relative;
+			        top: 0;
+					.background(@red);
+				}
+			}
+		}
+    
+    
+    	.header-nav {
+    		width: 100%;
+            height: 100%;
+			.background(@white);
+			.hidden();
+    		
+    		.header-nav-list {
+    			width: 100%;
+    			
+    			.list-element {
+    				width: 100%;
+    				.align(justify);
+    				padding: 30px 0 30px 20%;
+    
+    				.list-element-link {
+    					.decoration(none);
+    					color: @black;
+						font-size: 20px;
+						
+						.fas.fa-shopping-basket {
+                            color: @black;
+                        }
+    				}
+    			}
+    
+    			.close-menu {
+    				.align(right);
+    			    padding: 30px 10% 30px 0;
+    
+    				.bars-icon {
+    					.fontSize(25px);
+    				}
+    			}
+    		}
+    	}
+    
+    	.header-nav-display {
+			.show();
+			padding: 30px 0 0 0;
+			height: 100%;
+		}
+
+		.header-display {
+			.hidden();
+		}
+
+		.header-main-display {
+			height: 100%;
+		}
+    }
+
+    //Desktop Header
+    
+    .header-desktop {
+    	width: 50%;
+    	.hidden();
+		position: static;
+		.background(@black);
+    	padding: 25px 0 25px 0;
+
+    	@media @desktop {
+            .show();
+    	}
+    
+        .logo-desktop,
+        .social-icons-desktop {
+        	width: 50%;
+        	.float(left);
+        	.align(justify);
+        	border: 0;
+        }
+
+        .logo-desktop {   
+
+            .logo-desktop-image {
+                border: 0;
+                margin: 10px 0 0 10%;
+            }
+        }
+
+        .social-icon-image-desktop {
+            margin: 10px 0 0 0;
+        }
+    
+    	.header-nav-desktop {
+    		width: 100%;
+            .hidden();
+            .overflow;
+            padding: 35px 0 0 0;
+            
+            @media @desktop {
+                .show();
+            }
+    		
+    	    .header-nav-list-desktop {
+                width: 100%;
+                .float(left);
+    
+    			.list-element-desktop {
+    				.float(left);
+    				.show();
+    				width: 20%;
+    				.align(center);
+                    
+                    .basket-link-desktop,
+    				.list-element-link-desktop {
+    					.decoration(none);
+                        color: @white;
+                    } 
+                    
+                    .basket-link-desktop {
+                        .fontSize(25px);
+                        .fas.fa-shopping-basket {
+                            position: relative;
+                            bottom: 4px;
+						}
+						
+						.number {
+							.fontSize(0.5em);
+							display: inline-block;
+							width: 20px;
+							height: 20px;
+							color: @white;
+							border-radius: 10px;
+							position: relative;
+							top: 0;
+							.background(@red);
+						}
+                    }
+                } 
+    		}
+    	}
+    }
+}

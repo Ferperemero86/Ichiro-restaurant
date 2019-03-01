@@ -1,0 +1,256 @@
+
+
+/*<---STOCK--->*/
+
+////INDEX////
+
+// 1. Edit item Main
+// 2. Edit item Form
+// 3. Add item 
+
+//1.Edit-item-Main
+
+#stock-main {
+	width: 100%;
+	.overflow();
+	padding: 0 1% 100px 1%;
+
+	.stock-first-heading {
+		.fontSize(1.125em);
+		font-weight: bolder;
+		margin: 0 0 20px 0;
+	}
+	
+	.stock-products-message-succeed {
+		margin: 15px 0 15px 0;
+		color: @green;
+	}
+
+	.add-item-button,
+    .edit-item-button {
+		.standardButton(@black);
+		margin: 10px 0  10px 0;
+	}
+
+	.add-item-button {
+		margin: 20px 0 0 0;
+		.align(justify);
+	}
+
+	.stock-fields-element {
+		font-weight: bolder;
+	}
+
+	.stock-item-list,
+	.stock-fields-list {
+		width: 100%;
+        .overflow();
+		padding: 20px 0 0 0;
+		
+		.stock-fields-element,
+        .stock-fields-type,
+        .stock-item-element,
+        .stock-item-type {
+			.float(left);
+			width: 12%;
+			.align(justify);
+            display: block;
+            padding: 0 1% 0 1%;
+
+            .stock-fields-text {
+                display: inline
+            }
+			
+			.edit-item-button {
+				.standardButton(@black);
+    		    margin: 10px 0  10px 3%;
+			}
+
+			.hiddenButton {
+				.hidden();
+			}
+        }
+        .stock-item-description,
+        .stock-fields-description {
+            width: 22%;
+            .float(left);
+            .align(justify);
+            display: block;
+	    	padding: 1px 4% 1px 2%;
+		}
+
+	}
+}
+
+.outStock {
+	color: @red;
+}
+
+.available {
+	color: green;
+}
+
+//2.Edit stock form
+
+.edit-form-stock {
+	width: 100%;
+	height: 100%;
+	padding: 0 0 0 2%;
+
+	.edit-item-messages {
+		color: @red;
+		margin: 15px 0 15px 0;
+	}
+
+	.edit-form-stock-input,
+	.edit-form-stock-select {
+		border: 2px solid;
+	}
+
+	.edit-form-stock-inputs-first {
+		width: 100%;
+		.overflow();
+
+		.edit-form-stock-element {
+			.float(left);
+			width: 25%;
+			.align(justify);
+		}
+		
+		.edit-form-stock-text-area {
+			width: 35%;
+		}
+	}
+
+	.edit-form-stock-inputs-second {
+		padding: 20px 0 10px 0;
+		.overflow();
+		width: 100%;
+
+		.edit-form-stock-text-area {
+
+
+			.edit-form-stock-text-area-element {
+                border: 2px solid;
+			}
+		}
+	
+		.edit-form-stock-buttons {
+			width: 100%;
+			.align(justify);
+			margin: 10px 0 3% 0;
+	
+			.edit-form-stock-button {
+				.standardButton(@black);
+				margin: 0 10px 0 10px;
+		        padding: 5px 10px 5px 10px;
+			}
+		}
+	}
+	
+}
+@media @desktop {
+	.edit-form-stock {
+		width: 60%;
+		margin: 0 auto;
+	}
+}
+
+.edit-form-stock-fields {
+	width: 100%;
+	.overflow();
+    .edit-form-stock-fields-element {
+		.float(left);
+		width: 25%;
+		.align(justify);
+	}
+}
+
+//3.Add-item
+
+#stock-add-item-main {
+	width: 100%;
+	height: 100%;
+	.overflow();
+	padding: 0 1% 20px 1%;
+
+	@media @desktop {
+		width: 60%;
+		margin: 0 20% 0 20%;
+	}
+
+	.stock-add-item-first-heading {
+		.fontSize(1.125em);
+		font-weight: bolder;
+		margin: 0 0 20px 0;
+	}
+
+	.add-item-message-fail {
+		color: @red;
+	}
+
+	.add-item-message-success {
+		color: @green;
+	}
+
+    .stock-add-item-fields {
+
+		.stock-add-item-element {
+		
+            .stock-add-item-text {
+				font-weight: bolder;
+				.fontSize(0.875em);
+			}
+		}
+	}
+
+	.stock-add-item-fields,
+	.stock-add-item-inputs-first {
+		width: 100%;
+		.overflow();
+		padding: 20px 0 0 0;
+
+		.stock-add-item-element,
+		.type {
+			.float(left);
+			width: 20%;
+			.align(left);
+			display: block;
+
+			.stock-add-item-input {
+				border: 2px solid;
+			}
+
+			.stock-add-item-select {
+				border: 2px solid;
+			}
+			
+			.edit-item-button {
+				display: inline-block;
+				.standardButton(@black);
+    		    margin: 10px 0  10px 3%;
+			}
+
+			.hiddenButton {
+				.hidden();
+			}
+		}
+	}
+
+	.stock-add-item-inputs-second {
+		padding: 50px 0 0 0;
+
+	    .stock-add-item-text-area {
+			border: 2px solid;
+		}
+		.stock-add-item-button {
+			display: inline-block;
+			.standardButton(@black);
+    		margin: 10px 0  10px 3%;
+		}
+	}
+}
+
+
+
+

@@ -1,0 +1,69 @@
+
+
+/*<---PROFILE--->*/
+
+#admin-profile-main {
+	height: 100%;
+	width: 100%;
+	padding: 0 0 0 5%;
+	position: relative;
+
+	.element-updated {
+		color: @green;
+	}
+
+	.element-not-updated {
+		color: @red;
+	}
+
+	.admin-profile-first-heading {
+		.fontSize(1.125em);
+		font-weight: bolder;
+		margin: 20px 0 20px 0;
+	}
+
+	.admin-profile-details {
+		width: 100%;
+		.align(justify);
+		position: absolute;
+
+		.admin-profile-error-message {
+			color: @red;
+			margin: 20px 0 20px 0;
+		}
+
+		.logout-button {
+			position: absolute;
+			left: 65%;
+		}
+		@media @desktop {
+			.logout-button {
+			left: 25%;
+			}
+		}
+		
+		.admin-profile-element{
+			margin: 20px 0 20px 0;
+			width: 100%;
+
+			.admin-profile-button,
+			.admin-profile-span,
+			.admin-profile-label  {
+				margin: 20px 10px  20px 10px;
+			}
+
+			.form-input {
+				border: 2px solid;
+			}
+		}
+	}
+
+	.admin-profile-button,
+	.logout-button {
+		.standardButton(@black);
+	}
+}
+
+
+
+

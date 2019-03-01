@@ -1,0 +1,158 @@
+
+
+/*<---HOME--->*/
+
+#main-home {
+	width: 100%;
+	.background(@white);
+
+	.header-desktop {
+		position: absolute;
+    	.background(transparent);
+    	top: 0;
+    	z-index: 1;
+	}
+
+	.main-image {
+		width: 100%;
+
+	@media @desktop {
+		overflow: hidden;
+	}
+		.main-image-element {
+			max-width: 100%;
+			height: auto;
+
+			@media @desktop {
+				.hidden();
+			}
+		}
+
+		.main-image-element-desktop {
+			.hidden();
+			.responsiveImage();
+
+			@media @desktop {
+                .show();
+			}
+		}
+	}
+
+	.home-body-wrapp {
+		width: 100%;
+
+		.welcome-text {
+			margin: 50px 0 0 0;
+	
+			.welcome-heading {
+				margin: 0 0 50px 0;
+				.fontSize(30px);
+				color: @lightBlack;
+				.align(center);
+
+				@media @desktop {
+					.fontSize(1.875em);
+				}
+			}
+
+		    .welcome-paragraph {
+				width: 90%;
+				margin: 0 5% 0 5%;
+				padding: 50px 0 50px 0;
+				
+				@media @desktop {
+                    width: 50%;
+                    margin: 0 auto;
+                    padding: 100px 0 100px 0;
+				}
+
+				.welcome-paragraph-text {
+					.fontSize(1em);
+					color: @grey;
+					line-height: 1.6;
+					.align(justify);
+					margin: 25px 5% 0 5%;
+	
+					@media @desktop {
+						.fontSize(1.125em);
+					}
+				}
+			}
+
+			.welcome-photo {
+				width: 100%;
+			    .align(center);
+				.background(@black);
+
+				@media @desktop {
+				    padding: 100px 0 100px 0;
+				}
+				
+				.welcome-photo-image {
+					margin: 30px 0 30px 0;
+					.responsiveImage();
+				}
+			}
+		}
+
+		.order-links {
+			padding: 100px 0 200px 0;
+			width: 100%;
+			.overflow();
+
+			@media @desktop {
+				width: 50%;
+				margin: 50px 25% 50px 25%;
+			}
+
+			.order-link {
+				.float(left);
+				width: 50%;
+
+				.order-link-heading {
+					.align(center);
+					margin: 10px 0 10px 0;
+				}
+		
+				.order-link-image {
+					.responsiveImage();
+				}
+			}
+		}
+	}
+
+    .home-gallery {
+		width: 100%;
+		.overflow();
+		.background(@black);
+		margin: 30px 0 0 0;
+		padding: 100px 0 100px 0;
+	
+		.home-gallery-image {
+			.float(left);
+			width: 30%;
+			margin: 10px 1% 10px 1%;
+	
+			.home-gallery-image-element {
+				.responsiveImage();
+			}
+		}
+		
+		.home-gallery-links {
+			width: 100%;
+			.float(left);
+			margin: 30px auto;
+			.align(center);
+	
+			.home-gallery-link {
+			    .decoration(none);
+				.align(center);
+				border: 2px solid @white;
+				display: inline-block;
+				margin: 0 2% 0 0;
+				padding: 20px 50px 20px 50px;
+				color: @white;
+			}
+		}
+	}
+}

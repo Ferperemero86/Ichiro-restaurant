@@ -1,0 +1,62 @@
+
+
+/*<---FOOTER--->*/
+
+.footer {
+	width: 100%;
+	padding: 50px 0 50px 0;
+	.background(@lightBlack);
+	.overflow();
+	.fontSize(0.8em);
+
+	.social-links-list-footer {
+		width: 23%;
+		padding: 0 1% 0 1%;
+		.float(left);
+		color: @white;
+
+		.social-icon {
+			.float(left);
+			@media @desktop {
+				.hidden();
+			}
+		}
+
+		.social-icon-desktop{
+			.hidden();
+			.float(left);
+			
+			@media @desktop {
+				.show();
+			}
+		}
+	}
+
+	.opening-times-list-footer {
+		width: 23%;
+		.float(left);
+		color: @white;
+		padding: 0 1% 0 1%;
+	}
+
+	.contact-info-list-footer,
+	.address-list-footer {
+		width: 23%;
+		.float(left);
+		padding: 0 1% 0 1%;
+	}
+
+	.heading-footer {
+		.decoration(underline);
+		.fontSize(1em);
+		color: @white;
+	}
+
+	.list-element {
+		width: 100%;
+		.align(justify);
+		padding: 10px 0 10px 0;
+		color: @white;
+		.overflow();
+	}
+}

@@ -1,0 +1,65 @@
+
+
+/*<---CONTACT---->*/
+
+#contact-main {
+	width: 100%;
+
+	.contact-body {
+		.align(justify);
+		padding: 50px 5% 0 5%;
+		margin: 0 0 150px 0;
+        .overflow();
+        
+		@media @desktop {
+			width: 60%;
+			padding: 100px 0 0 0;
+			margin: 0 15% 150px 15%;
+		}
+		
+        .contact-heading {
+			margin: 0 0 15px 5%;
+			.fontSize(1.25em);
+			font-weight: bolder;
+
+			@media @desktop {
+				.fontSize(1.5em);
+			}
+        }
+        
+        .contact-section {
+            width: 100%;
+            .overflow();
+
+            .contact-list {
+                margin: 30px 0 30px 0;
+                .align(justify);
+                padding: 0 0 0 5%;
+                width: 40%;
+                .float(left);
+                line-height: 1.6;
+              
+                .contact-list-heading {
+                    font-weight: bolder;
+                    margin: 0 0 5px 0;
+                }
+            }
+        }
+
+        .address-map-image {
+            padding: 50px 0 30px 0;
+            margin: 0 5% 50px 5%;
+            width: 90%;
+
+            @media @desktop {
+                margin: 50px 0 50px 5%;
+                width: 80%;
+            }
+            .overflow();
+
+            .map-image {
+                .responsiveImage();
+            }
+        }
+	}
+}
