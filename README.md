@@ -26,9 +26,9 @@ Index:
   
   2.1 TECHNOLOGY EMPLOYED.
   
-  This projects has been made with:
-     2.1.1. React and react-router.
-     2.1.2. Html,Less.
-     2.1.3 Express and Webpack 4 in order to bundle all the content.
-     2.1.4 Mongodb to store and fetch data.
-     2.1.5 Heroku hosting.
+   This projects has been made with:
+    - React and react-router.
+    - Html,Less.
+    - Express and Webpack 4 in order to bundle all the content.
+    - Mongodb to store and fetch data.
+    - Heroku hosting.
