@@ -1,0 +1,155 @@
+
+
+/*<---LOGIN--->*/
+
+#admin-login-main {
+	width: 100%;
+	height: 100%;
+	padding: 10px 0 20px 0;
+	.align(center);
+
+	.admin-login-messages {
+		padding: 0 0 10px 0;
+		color: @red;
+		
+		.admin-login-messages-email-sent {
+			color: @green;
+		}
+	}
+
+	.admin-login-heading {
+        margin: 220px 0 15px 0;
+		.adminHeading();
+		
+		@media @desktop {
+			margin: 30px 0 15px 0;
+		}
+	}
+
+	.admin-login-form-wrapp {
+		width: 100%;
+		margin: 50px auto;
+		.align(center);
+
+		@media @desktop {
+			margin: 100px 0 50px 0;
+		}
+
+		.admin-login-form {
+			width: 250px;
+			margin: 0 auto;
+			.align(justify);
+
+			.admin-login-form-element {
+				margin: 15px 0 15px 0;
+				.overflow();
+
+				.admin-login-form-input {
+					border: 2px solid;
+					.float(right);	
+				}
+				.admin-login-form-label {
+					margin: 0 2% 0 0;
+					.float(left);
+				}
+			}
+		}
+
+		.admin-login-form-send-button {
+			.standardButton(@black);
+		    margin: 10px 0 0 0;
+		}
+
+		.admin-login-form-recovery-link {
+			color: @lightBlack;
+			margin: 15px 0 0 0;
+		}
+	}
+
+	//Recovery email
+
+	.recovery-email {
+		margin: 20px 0 50px 0;
+
+		.recovery-email-heading {
+			margin: 15px 0 15px 0;
+		}
+		
+		.recovery-email-label {
+			margin: 0 2% 0 0;
+		}
+
+		.recovery-email-input {
+			border: 2px solid;
+		}
+
+		.recovery-form-button {
+			.standardButton(@black);
+		    margin: 0 0 0 2%; 
+		}
+	}
+}
+
+.admin-resset-form-main {
+	width: 100%;
+	height: 100%;
+	padding: 100px 0 0 0;
+	text-align: center;
+
+	.error-message {
+		color: @red;
+		margin: 0 0 10px 0;
+	}
+	
+	.admin-resset-form {
+		width: 300px;
+		margin: 20px auto;
+		text-align: justify;
+		
+		.admin-resset-form-header {
+            margin: 0 0 10px 0;
+		}
+
+		.admin-resset-form-password {
+			margin: 0 0 50px 0;
+		}
+
+		.admin-resset-form-input,
+		.admin-resset-form-label  {
+			margin: 20px 5px 20px 0;
+		}
+
+		.admin-resset-form-input {
+				border: 2px solid;	
+		}
+		
+		button {
+			margin: 0 0 0 2%;
+			.standardButton(@black)
+		}
+	}
+}
+
+#password-succeed-main, 
+#token-expired-main,
+#password-failed-main {
+	width: 100%;
+	height: 100%;
+	padding: 200px 0 0 0;
+	text-align: center;
+
+	.password-succeed-content,
+	.token-expired-content,
+	.password-failed-content {
+		margin: 0 auto;
+		width: 50%;
+		text-align: justify;
+		padding-left: 25%;
+		background-color: @white;
+	}
+
+	.password-succeed-header,
+	.password-failed-header {
+		margin: 0 0 20px 0;
+	}
+}

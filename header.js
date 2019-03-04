@@ -83,25 +83,6 @@ const MobileHeader = ({ cartItemsNumber }) => {
         basket.classList.add('hidden');
     }
     
-    //Hides Main Logo and sets the nav in fixed position
-    window.onscroll = function() {scrollFunction()};
-
-    const scrollFunction = () => {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-
-            if (document.querySelector(".logo") !== null) {
-                document.querySelector(".logo").style.display = "fixed";
-                document.querySelector(".header").style.position = "fixed";
-            }
-            
-        } else {
-            if (document.querySelector(".logo") !== null) {
-                document.querySelector(".logo").style.display = "block";
-                document.querySelector(".header").style.position = "static";
-            }
-        }
-    }
-
     return (
         <header className="header"> 
             <img src={`src/images/${ichiroLogo}`} className="logo" />
